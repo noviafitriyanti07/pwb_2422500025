@@ -5,11 +5,11 @@ class Admin_dashboard_controller extends CI_Controller {
 
     public function __construct() {
         parent::__construct();
-        is_admin_logged_in();
+        is_administrator_logged_in();
     }
 
     public function index() {
-        $data['title'] = 'Lyn Pet Shop';
+        $data['title'] = '4priMuly44 Store';
         $this->load->view('administrator/templates/header', $data);
         $this->load->view('administrator/templates/sidebar');
         $this->load->view('administrator/dashboard');
